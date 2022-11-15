@@ -1,0 +1,29 @@
+.grid_artist {
+    display: flex; 
+    gap: 1rem;
+   
+  }
+  .right_side {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    justify-content: center;
+    
+  }
+  .leftSide {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    justify-content: center;
+
+  }
+
+  .artist_play {
+    transition: transform 0.5s;
+    
+  }
+  .artist_play:hover {
+    transform: scale(103%);
+   
+
+  }
