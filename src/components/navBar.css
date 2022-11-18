@@ -116,3 +116,14 @@
   #body_container {
     background-image:linear-gradient(rgb(15, 15, 15),black 75%, rgb(66, 58, 58));
   }
+
+
+  .monitor {
+    border: solid 1px black;
+    position: absolute;
+    top: 37%;
+    left: 41%;
+    width: 251px;
+    height: 156px;
+    border-radius: 15px;
+  }

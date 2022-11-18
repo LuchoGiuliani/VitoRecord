@@ -6,15 +6,16 @@ export default function GridArtist() {
       <div className="titulo text-lg pt-5 pb-5  ">
         {/* <h1 className="text-amber-600 text-2xl">.Nuestras Producciones</h1> */}
       </div>
-      <iframe
-        width="100%"
-        height="600px"
-        src="https://www.youtube.com/embed/r_tsEVPRDy4?controls=0"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe> 
+      <iframe 
+      width="100%" 
+      height="600px" 
+      src="https://www.youtube.com/embed/videoseries?list=PL6T13FK9c-7OlcKl96DNgbyXH25Yt9vQe" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+
+      </iframe>
       {/* <div className="grid_artist">
         <div className="leftSide">
         <div className="artist_play"><img src="images/img1.png" alt="" /></div>
