@@ -10,11 +10,45 @@ import Trabajo from './components/Trabajo'
 import GridArtist from './components/GridArtist'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import { useEffect } from 'react'
+import {motion} from 'framer-motion'
 function App() {
+  const [mousePosition, setMousePosition] = useState({
+    x:0,
+    y:0
+  });
+  console.log(mousePosition);
+
+  useEffect(()=> {
+    const mouseMove = e => {
+      setMousePosition({
+        x : e.clientX,
+        y : e.clientY
+      })
+
+  }
+
+  window.addEventListener("mousemove", mouseMove);
+
+  return () => {
+    window.removeEventListener("mousemove", mouseMove);
+  }
+},[]);
+
+const variants = {
+  default: {
+    x: mousePosition.x - 12,
+    y: mousePosition.y - 12
+  }
+}
  
 
   return (
     <div className="App ">
+      <motion.div 
+      className="cursor"
+      variants={variants}
+      animate= "default" />
      
        {/* navBar */}
        <NavBar />

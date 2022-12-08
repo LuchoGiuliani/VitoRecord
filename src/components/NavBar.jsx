@@ -24,13 +24,13 @@ export default function NavBar()  {
 
   
   
-    <div className='p-4 flex navbar_container justify-between absolute top-[1%] w-[100%] '>
+    <div className='p-4 flex items-center navbar_container justify-between absolute top-[1%] w-[100%] '>
       
     
       <div className='img_vito z-10'>
-      {/* <img  className ="animate__animated animate__heartBeat hover:blur-lg  " src="/images/vitonavbar.png" alt="" /> */}
+       <img  className ="animate__animated animate__heartBeat  max-h-10 sm:max-h-24  " src="/images/vitonavbar.png" alt="" /> 
       </div>
-      <div className='nav_right flex justify-center z-10 gap-3 '>
+      <div className='nav_right flex justify-center z-10 gap-3 max-h-10 sm:max-h-24 '>
       {/* <a href="#playlist" className="scroll-smooth"><i class="fa-solid fa-folder-music"></i> </a> */}
       <a href="https://www.instagram.com/vitorecordsarg/?hl=es" Target="_blank"><img className='links insta hover:scale-110' src="/images/insta.png" alt="" /></a>
       {/* <img className='links email hover:scale-110 ' src="/images/mail.png" alt="" /> */}

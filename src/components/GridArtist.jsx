@@ -1,10 +1,17 @@
 import React from "react";
-
+import { useTypewriter } from "react-simple-typewriter";
 export default function GridArtist() {
+  const [text,count] = useTypewriter({
+    words: ['Conocé nuestra música',
+            'Canal oficial YouTube',
+          'Prod. by VitoRecords'],
+          loop:5,
+          delaySpeed: 3000
+  })
   return (
     <div className=" top-48 p-5">
-      <div className="titulo text-lg pt-5 pb-5  ">
-        {/* <h1 className="text-amber-600 text-2xl">.Nuestras Producciones</h1> */}
+      <div className=" h-7  titulo pt-5 pb-12  p-5 text-2xl text-amber-600 text-center">
+        {"🎵"+text+"🎵"} 
       </div>
       <iframe 
       width="100%" 

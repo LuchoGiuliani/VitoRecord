@@ -1,7 +1,7 @@
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 5px;
+  font-family: 'Barlow', sans-serif;
+  letter-spacing: 2px;
   ;
 }
 
@@ -39,4 +39,19 @@ h1, h2, h3, h4, h5, h6 {
 .read-the-docs {
   color: #888;
 }
+
+/* .cursor {
+ 
+ object-fit:contain ;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 111;
+box-shadow: 0px 0px 30px 2px orange;
+background-image:url("../public/images/vitoNavbar.png") 
+
+} */
 
