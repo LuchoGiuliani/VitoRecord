@@ -1,6 +1,12 @@
 import React from "react";
 import { useTypewriter } from "react-simple-typewriter";
+import { useScroll } from "framer-motion"
+import { motion } from "framer-motion";
+
+
 export default function Trabajo() {
+  const { scrollYProgress } = useScroll()
+
   const [text,count] = useTypewriter({
     words: ['Nuestra playlist oficial ',
           'Prod. by VitoRecords'],
@@ -9,6 +15,8 @@ export default function Trabajo() {
   })
   return (
     <div  className="">
+      <motion.div style={{ scaleX: scrollYProgress }} />
+      
       <h1 className="text-center p-5 mb-6 sm:text-2xl text-orange-400 h-10  ">
       {}
       </h1>
