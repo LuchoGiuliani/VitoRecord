@@ -1,0 +1,12 @@
+#blob {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transition: -50% -50%;
+    border-radius: 50%;
+    background-color:linear-gradient(to right, aqua, mediumpurple);
+    z-index: 100;
+    height: 300px;
+    aspect-ratio: 1;
+
+   }

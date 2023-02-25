@@ -7,11 +7,13 @@ import './components/gridArtist.css'
 import NavBar from './components/NavBar'
 import Playlist from './components/Playlist'
 import Trabajo from './components/Trabajo'
+import Blob from './components/Blob'
 
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import { useEffect } from 'react'
 import {motion} from 'framer-motion'
+import GridArtist from './components/GridArtist'
 function App() {
 //   const [mousePosition, setMousePosition] = useState({
 //     x:0,
@@ -45,6 +47,7 @@ function App() {
 
   return (
     <div className="App ">
+      <Blob  />
       {/* <motion.div 
       className="cursor"
       variants={variants}
@@ -54,7 +57,7 @@ function App() {
        <NavBar />
 
        {/* YoutubeChannel */}
-       
+       <GridArtist/>
        {/* OurWork */}
        <Trabajo />  
        {/* Playlist */}
