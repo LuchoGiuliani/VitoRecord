@@ -1,20 +1,20 @@
 import React from "react";
 import { useTypewriter } from "react-simple-typewriter";
 export default function GridArtist() {
- 
   return (
-    <div className=" top-48 p-5">
-     
-      <iframe 
-      width="100%" 
-      height="600px" 
-      src="https://www.youtube.com/embed/videoseries?list=PL6T13FK9c-7OlcKl96DNgbyXH25Yt9vQe" 
-      title="YouTube video player" 
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen>
-
-      </iframe>
+    <div className="pt-10 top-48 p-5">
+      <div className="flex justify-between p-6">
+        <img className="sm:w-20 sm:h-20 w-10 h-10" src="/images/arrow-l.png" alt="" />
+        <img className="sm:w-20 sm:h-20 w-10 h-10" src="/images/arrow-r.png" alt="" />
+      </div>
+      <iframe
+        width="100%"
+        height="600px"
+        src="https://www.youtube.com/embed/videoseries?list=PL6T13FK9c-7OlcKl96DNgbyXH25Yt9vQe"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
       {/* <div className="grid_artist">
         <div className="leftSide">
         <div className="artist_play"><img src="images/img1.png" alt="" /></div>
@@ -28,6 +28,5 @@ export default function GridArtist() {
         </div>
       </div> */}
     </div>
-
   );
 }

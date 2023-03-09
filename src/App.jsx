@@ -1,77 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import './index.css'
-import './components/navBar.css'
-import './components/gridArtist.css'
-import NavBar from './components/NavBar'
-import Playlist from './components/Playlist'
-import Trabajo from './components/Trabajo'
-import Blob from './components/Blob'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import "./App.css";
+import "./index.css";
+import "./components/navBar.css";
+import "./components/gridArtist.css";
+import NavBar from "./components/NavBar";
+import Playlist from "./components/Playlist";
+import Trabajo from "./components/Trabajo";
+import Blob from "./components/Blob";
 
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import { useEffect } from 'react'
-import {motion} from 'framer-motion'
-import GridArtist from './components/GridArtist'
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import { useEffect } from "react";
+import { motion } from "framer-motion";
+import GridArtist from "./components/GridArtist";
 function App() {
-//   const [mousePosition, setMousePosition] = useState({
-//     x:0,
-//     y:0
-//   });
-//   console.log(mousePosition);
-
-//   useEffect(()=> {
-//     const mouseMove = e => {
-//       setMousePosition({
-//         x : e.clientX,
-//         y : e.clientY
-//       })
-
-//   }
-
-//   window.addEventListener("mousemove", mouseMove);
-
-//   return () => {
-//     window.removeEventListener("mousemove", mouseMove);
-//   }
-// },[]);
-
-// const variants = {
-//   default: {
-//     x: mousePosition.x - 12,
-//     y: mousePosition.y - 12
-//   }
-// }
- 
-
   return (
     <div className="App ">
-      <Blob  />
-      {/* <motion.div 
-      className="cursor"
-      variants={variants}
-      animate= "default" /> */}
-     
-       {/* navBar */}
-       <NavBar />
+      {/* <Blob /> */}
 
-       {/* YoutubeChannel */}
-       <GridArtist/>
-       {/* OurWork */}
-       <Trabajo />  
-       {/* Playlist */}
-       <Playlist />  
+      {/* navBar */}
+      <NavBar />
 
-       {/* Contact */}
-     
+      {/* YoutubeChannel */}
+      <GridArtist />
 
-       {/* Footer */}
-       <Footer />
+      {/* OurWork */}
+      <Trabajo />
 
+      {/* Playlist */}
+      <Playlist />
 
+      {/* Contact */}
+
+      {/* Footer */}
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
